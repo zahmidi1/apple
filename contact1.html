@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact1.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="one">
+             
+            <ul class="ul">
+                <img class="logo" src="./image/apale .png" alt="">
+                <li class="li"><a href="./home.html"> home</a> </li>
+                <li class="li"> <a href="./produit.html">produit</a> </li>
+                <li class="li"> <a href="./cantactEmail.html">contact</a> </li>
+                <img class="shop" src="./image/shop.png" alt="">
+    
+            </ul>
+          
+        </div>
+        <div class="two">
+            
+    
+            <img  src="./image/fb.png" alt="fb">
+            <img   src="./image/ig.png" alt="ig">
+            <img   src="./image//tw.png" alt="tw">
+           
+    
+        </div> 
+        <div class="na">
+
+            <div class=> 
+            <img src="./image/1.png" id="mainImage"><br>
+            <button class="next" onclick="changeImage()"><h1>color</h1></button>
+
+           </div>
+            <div>
+                <ul>
+
+                
+        <h3>l’iPhone 12 mini</h3> 
+           <li> Écran : 5,4 pouces (2340 x 1080 pixels)</li><br>
+          <li>  Caméra : deux capteurs à l'arrière 12 mégapixels (ultra grand‑angle et grand‑angle) et un appareil frontal de 12 mégapixels</li> <br><br>
+           <li> Processeur : A14 Bionic </li><br>
+          <li>  Mémoire : 4 Go de mémoire vive, 64/128/256 Go de stockage</li><br>
+           <li> OS : iOS 14.3 </li><br>
+           <li> Batterie : 2217 mAh, charge sans fil Magsafe (pas de chargeur fourni) </li><br>
+           <li> Prix : <br> <br> <br>
+               <a class="prix" href="./cantactEmail.html" >779 $ (64 Go)</a> 
+                <a class="prix" href="./cantactEmail.html" > 859 $ (128 Go)</a><br><br>
+                <a class="prix" href="./cantactEmail.html" >979 $ (256 Go) </a>  
+
+
+           </li>
+           
+        </ul>
+        </div>
+        </div> 
+        <div class="no">
+            <img src="./image/Ma vidéo.gif" alt="">
+        </div>
+
+
+
+
+    </div>
+  <script>
+      var myImage = document.getElementById('mainImage');
+      var imageArray = ["./image/1.png","./image/2.png","./image/3.png","./image/4.png","./image/5.png"]
+    var imageIndex = 1;
+
+
+    function changeImage(){
+        myImage.setAttribute("src" , imageArray[imageIndex]);
+        imageIndex++;
+        if (imageIndex > 4){
+            imageIndex=0;
+        }
+
+    }
+
+
+  </script>
+
+
+
+    
+</body>
+</html>

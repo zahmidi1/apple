@@ -1,0 +1,320 @@
+
+        body{
+            color: #fff;
+            text-align: center;
+          background-color: black;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+           
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows: repeat(5,1fr);
+            grid-gap:10px;
+            grid-template-areas:
+            "zz zz zz zz"
+            "aa bb cc dd"
+            "ee ff jj hh"
+            "kk ll mm nn"
+            "fo fo fo fo"
+            
+        
+        }
+        @media (max-width:1000px){
+            .container{
+                width: 100%;
+                height: 100vh;
+               
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-auto-rows: repeat(6,1fr);
+                grid-gap:10px;
+                grid-template-areas:
+                "zz zz zz "
+                "aa bb cc"
+                "dd ee ff"
+                "jj hh kk"
+                "ll mm nn"
+                "fo fo fo"
+                
+            
+            }
+
+
+        }
+        @media (max-width:800px){
+            .container{
+                width: 100%;
+                height: 100vh;
+               
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-auto-rows: repeat(8,1fr);
+                grid-gap:10px;
+                grid-template-areas:
+                "zz zz"
+                "aa bb"
+                "cc dd"
+                "ee ff"
+                "jj hh"
+                "kk ll"
+                "mm nn"
+                "fo fo"
+                
+            
+            }
+
+
+        }
+        @media (max-width:500px){
+            .container{
+                width: 100%;
+                height: 100vh;
+               
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-auto-rows: repeat(14,1fr);
+                grid-gap:10px;
+                grid-template-areas:
+                "zz"
+                "aa"
+               "bb"
+                "cc"
+                "dd"
+                "ee"
+                "ff"
+                "jj"
+                "hh"
+                "kk"
+                "ll"
+                "mm"
+                "nn"
+                "fo"
+                
+            
+            }
+
+
+        }
+
+
+
+     
+        a {
+            color: rgb(250, 249, 249);
+            font-family: helvetica;
+            text-decoration: none;
+            text-transform: uppercase;
+
+          }
+          
+          a:hover {
+            color: rgb(226, 75, 75);
+
+          }
+          
+          
+          
+         
+
+
+        
+        
+        
+          li{
+            position: relative;
+            top: 30px;
+        }
+        .logo{
+
+            width: 70px;
+            height: 70px;
+           
+
+           
+        }
+        .shop{
+            width: 50px;
+            height: 50px;
+            top: 10px;
+            position: relative;
+        }
+        ul{
+            list-style: none;
+            display:flex;
+            justify-content: space-around;
+            text-align: center;
+            
+            
+        }
+       
+        .one{
+            grid-area: zz;
+            height: 100px;
+            margin-top: 20px;
+            
+            text-align: center;
+        }
+
+
+
+        .a{
+            grid-area: aa;
+
+
+        }
+        .b{
+            grid-area: bb;
+
+        }
+        .c{
+            grid-area: cc;
+
+
+        }
+        .d{
+            grid-area: dd;
+        }
+        .e{
+            grid-area: ee;
+        }
+        .f{
+            grid-area: ff;
+        }
+        .j{
+            grid-area: jj;
+        }
+        .h{
+            grid-area: hh;
+        }
+        .k{
+            grid-area: kk;
+        }
+        .l{
+            grid-area: ll;
+        }
+        .m{
+            grid-area: mm;
+        }
+        .n{
+            grid-area: nn;
+        }
+
+        .fouter{
+            grid-area: fo;
+            width: 70%;
+            height: 100px;
+            
+            display:flex;
+            justify-content: space-around;
+          
+            margin-left: 14%;
+           
+
+        }
+        .fouter img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .magsaf{
+            border-radius: 50%;
+        }
+
+
+
+
+
+       
+        
+        .card{
+            position: relative;
+            width: 320px;
+            height: 420px;
+            background: black;
+            border-radius: 20px;
+            background: #122936;
+            overflow: hidden;
+        }
+     
+        .card::after{
+            content: 'Apple';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-weight: 600;
+            font-size: 7em;
+            color: rgba(0,0,0,0.1);  
+        }
+        .card .imgBx{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        padding-top: 20px;
+        z-index: 1;
+        
+        }
+        .imgBx img{
+            width: 250px;
+            height: 250px;
+            transition: 0.5s;
+        }
+        .card:hover .imgBx img{
+           
+            width: 200px;
+            height: 200px;
+        
+        }
+        .card .contentBx{
+        position: relative;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        }
+        
+        .card .contentBx h3{
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        
+        }
+        .card .contentBx .price{
+            font-size: 24px;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 1px;
+        
+        
+        }
+        .card .contentBx .acheter{
+            position: relative;
+            top: 200px;
+            padding: 10px 30px;
+            margin-top: 15px;
+            text-decoration: none;
+            background: #2196f3;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.5s;
+        }
+        
+        .card:hover .contentBx .acheter{
+            top: 0;
+            opacity: 1;
+        }
+        
+        
+        
